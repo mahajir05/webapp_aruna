@@ -26,8 +26,9 @@ class HomeController extends GetxController {
   }
 
   void search(String keyword) {
-    var res = contents.value
-        ?.where((element) => (element.title ?? '').contains(keyword) || (element.body ?? '').contains(keyword));
+    var res = contents.value?.where((element) =>
+        (element.title ?? '').toLowerCase().contains(keyword.toLowerCase()) ||
+        (element.body ?? '').toLowerCase().contains(keyword.toLowerCase()));
     contentsShowing.value = res?.toList();
   }
 }
