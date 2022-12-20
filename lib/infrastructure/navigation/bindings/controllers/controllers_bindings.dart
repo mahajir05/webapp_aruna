@@ -1,0 +1,2 @@
+export 'package:webapp_aruna/infrastructure/navigation/bindings/controllers/detail.controller.binding.dart'; 
+export 'package:webapp_aruna/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
